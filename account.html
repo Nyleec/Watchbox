@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="account-styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+<header class="site-header">
+    <div class="logo">
+        <a href="index.html"> <!-- This makes the logo clickable -->
+            <img src="watchbox.webp" alt="Logo">
+        </a>
+    </div>
+    <nav class="header-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tv-shows.html">TV Shows</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="market.html">Marketplace</a></li>
+        </ul>
+    </nav>
+     <div class="user-controls">
+            <input type="text" placeholder="Search">
+            <div class="profile"><a href="login.html">Login</a></div>
+        </div>
+    </header>
+<body>
+    <div class="create-account-container">
+        <h2>Create an Account</h2>
+        <form id="createAccountForm" action="#" method="POST">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Create Account</button>
+            </div>
+        </form>
+        <p class="login-link">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+
+    <script src="account.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+body {
+    background-color: #141414;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #141414;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    opacity: .85;
+    flex-wrap: nowrap; /* Prevents items from wrapping */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0968e5;
+}
+
+/* Rounded Logo Styles */
+.logo img {
+    width: 80px; /* Adjust the size as needed */
+    height: 80px; /* Make height equal to width for a perfect circle */
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Ensure the image scales correctly within the circle */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px; /* Spacing between the menu items */
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap; /* Prevents wrapping */
+}
+
+nav ul li {
+    margin-left: 10px;
+    white-space: nowrap; /* Ensures text doesn't wrap */
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #0968e5;
+    border-radius: 5px;
+}
+
+.user-controls {
+    display: flex;
+    align-items: center;
+}
+
+.user-controls input[type="text"] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.profile {
+    background-color: #333;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+/* Hero/Banner Section */
+.hero {
+    height: 70vh;
+    background: url('https://example.com/featured-image.jpg') no-repeat center center/cover;
+    position: relative;
+    margin-top: 60px; /* Offset for fixed header */
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 20%;
+    left: 30px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    background-color: #0968e5;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero Banner and Carousel Styles */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #000; /* Fallback background color */
+    overflow: hidden;
+}
+
+/* Carousel Container */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Hero Content (Slide) */
+.hero-content {
+    min-width: 100%;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+/* Active Slide */
+.hero-content.active {
+    opacity: 1;
+}
+
+/* Carousel Controls */
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+/* Content Rows */
+.content {
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.content-row {
+    margin-bottom: 40px;
+}
+
+.content-row h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.row {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.row::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+
+.item {
+    min-width: 200px;
+    height: 300px;
+    background-color: #333;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #141414;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+    font-size: 12px;
+}
+
+.language-selection {
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .content-row h2 {
+        font-size: 20px;
+    }
+
+    .item {
+        min-width: 150px;
+        height: 200px;
+    }
+
+    nav ul {
+        display: none; /* Hide navigation on mobile */
+    }
+
+    .user-controls input[type="text"] {
+        width: 80px;
+    }
+}
+

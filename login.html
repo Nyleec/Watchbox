@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - WatchBox</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to index page styles -->
+    <link rel="stylesheet" href="login-styles.css"> <!-- Additional login styles -->
+</head>
+<body>
+    <!-- Header Section -->
+<header class="site-header">
+    <div class="logo">
+        <a href="index.html"> <!-- This makes the logo clickable -->
+            <img src="watchbox.webp" alt="Logo">
+        </a>
+    </div>
+    <nav class="header-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tv-shows.html">TV Shows</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="market.html">Marketplace</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Main Login Content -->
+    <div class="login-container">
+        <h2>Login to MyStream</h2>
+        <form action="dashboard.html" method="POST">
+            <div class="input-group">
+                <label for="username">Username or Email</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+            <div class="additional-links">
+                <a href="#">Forgot Password?</a> | <a href="account.html">Create an Account</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Help Center</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy</a>
+        </div>
+        <div class="language-selection">
+            <select>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+            </select>
+        </div>
+    </footer>
+</body>
+</html>

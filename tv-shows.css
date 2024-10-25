@@ -1,0 +1,167 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+body {
+    background-color: #141414;
+}
+
+header a{
+    text-decoration: none;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #141414;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    opacity: .85;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0968e5;
+}
+
+/* Rounded Logo Styles */
+.logo img {
+    width: 80px; /* Adjust the size as needed */
+    height: 80px; /* Make height equal to width for a perfect circle */
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Ensure the image scales correctly within the circle */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #0968e5;
+    border-radius: 5px;
+}
+
+.user-controls {
+    display: flex;
+    align-items: center;
+}
+
+.user-controls input[type="text"] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.profile {
+    background-color: #333;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+/* TV Shows Content Styling */
+.tv-shows-content {
+    padding: 100px 30px 30px; /* Add padding to account for the fixed header */
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* TV Shows Grid Styling */
+.shows-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Larger grid items */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Individual Show Item Styling */
+.show-item {
+    background-color: #333; /* Dark background for each show */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.show-item:hover {
+    transform: scale(1.05); /* Scale up on hover for an interactive effect */
+}
+
+.show-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.show-item h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.show-item p {
+    font-size: 14px;
+    color: #b3b3b3; /* Light gray text for descriptions */
+}
+
+/* Button Styling */
+button, .sort-button, .search-bar {
+    background-color: #fff; /* Netflix-like red button */
+    border: none;
+    border-radius: 4px;
+    color: #141414;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover, .sort-button:hover {
+    background-color: #0968e5; /* Slightly lighter red on hover */
+}
+
+/* Search Bar Styling */
+.search-bar {
+    width: 60%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 4px;
+    border: 1px solid #333;
+    font-size: 16px;
+}
+
+/* Footer Styling */
+.site-footer {
+    background-color: #141414;
+    color: #b3b3b3;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
